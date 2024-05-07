@@ -11,7 +11,25 @@ body {
   color: var(--colorTextPrimary);
   background-color: var(--colorBackground);
 }
+.container {
+  max-width: 1507px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* ------------------header---------- */
+.header {
+  padding-top: 65px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 93.22%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .logo {
   font-family: "Chonburi", serif;
   font-weight: 400;
@@ -19,14 +37,27 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .action-link {
   font-weight: 900;
   font-size: 17px;
 }
 /* -----------------------------------main--------------- */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 745px;
+}
+.hero-container {
+  max-width: 980px;
+}
 .hero-subtitle {
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 .hero-title {
   font-family: "Cinzel", serif;
@@ -34,6 +65,29 @@ body {
   font-size: 88px;
   line-height: 1.13636;
   text-transform: capitalize;
+  margin-bottom: 32px;
+}
+.travel {
+  padding-bottom: 200px;
+}
+.travel-item {
+  margin-bottom: 200px;
+}
+.travel-item:last-child {
+  margin-bottom: 0;
+}
+.travel-step {
+  display: flex;
+  gap: 115px;
+}
+.travel-item:nth-child(even) .step-foto {
+  order: -1;
+}
+.step-body {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-left: 150px;
 }
 .step-text {
   font-weight: 900;
@@ -54,14 +108,36 @@ body {
   font-weight: 900;
   color: var(--colorTextAccent);
 }
+/* --------------footer----------------- */
+.footer {
+  padding-bottom: 120px;
+}
+.footer-container {
+  display: flex;
+  gap: 200px;
+}
+.footer-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 .footer-info-text {
   font-weight: 900;
   line-height: 1.77778;
+  flex-grow: 1;
+  max-width: 303px;
 }
 .footer-info-copyright {
   font-weight: 400;
   line-height: 1.77778;
   opacity: 0.5;
+}
+.blog-list,
+.mntn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .blog-title,
 .mntn-title {
@@ -69,6 +145,7 @@ body {
   font-size: 24px;
   line-height: 1.33333;
   color: var(--colorTextAccent);
+  margin-bottom: 25px;
 }
 .blog-link,
 .mntn-link {
